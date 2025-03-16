@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Compuertas Lógicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Simulador de Compuertas Lógicas</h1>
+    </div>
+
+    <div class="container">
+        <div class="inputs">
+            <button id="inputA" class="off" onclick="toggleInput('A')">A: 0</button>
+            <button id="inputB" class="off" onclick="toggleInput('B')">B: 0</button>
+        </div>
+
+        <div class="circuit">
+            <div class="gate">
+                <span>AND</span>
+                <div id="outputAND" class="off"></div>
+            </div>
+            <div class="gate">
+                <span>OR</span>
+                <div id="outputOR" class="off"></div>
+            </div>
+            <div class="gate">
+                <span>XOR</span>
+                <div id="outputXOR" class="off"></div>
+            </div>
+            <div class="gate">
+                <span>NAND</span>
+                <div id="outputNAND" class="off"></div>
+            </div>
+            <div class="gate">
+                <span>NOR</span>
+                <div id="outputNOR" class="off"></div>
+            </div>
+            <div class="gate">
+                <span>XNOR</span>
+                <div id="outputXNOR" class="off"></div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Tabla de Verdad</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>AND</th>
+                <th>OR</th>
+                <th>XOR</th>
+                <th>NAND</th>
+                <th>NOR</th>
+                <th>XNOR</th>
+            </tr>
+        </thead>
+        <tbody id="truthTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
